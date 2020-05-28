@@ -1,26 +1,71 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OneColumnLayoutComponent } from './layouts';
-import { NbLayoutModule, NbSidebarModule } from '@nebular/theme';
-import { HeaderComponent } from './layouts/components/header/header.component';
+import {
+  NbLayoutModule,
+  NbSidebarModule,
+  NbThemeModule,
+  NbMenuModule,
+  NbUserModule,
+  NbActionsModule,
+  NbSearchModule,
+  NbContextMenuModule,
+  NbButtonModule,
+  NbSelectModule,
+  NbIconModule,
+  NbMenuService} from '@nebular/theme';
+import { DEFAULT_THEME } from './styles/theme.defaut';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { HeaderComponent, FooterComponent } from './components';
+import { NbMenuInternalService } from '@nebular/theme/components/menu/menu.service';
+
 
 const NB_MODULES = [
   NbLayoutModule,
   NbSidebarModule.forRoot(),
+  NbMenuModule,
+  NbUserModule,
+  NbActionsModule,
+  NbSearchModule,
+  NbContextMenuModule,
+  NbButtonModule,
+  NbSelectModule,
+  NbIconModule,
+  NbEvaIconsModule,
 ];
 
 const COMPONENTS = [
   OneColumnLayoutComponent,
+  HeaderComponent,
+  FooterComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    HeaderComponent,
   ],
   imports: [
     CommonModule,
     ...NB_MODULES,
-  ]
+  ],
+  exports: [
+    CommonModule,
+    ...COMPONENTS,
+  ],
 })
-export class ThemeModule { }
+export class ThemeModule {
+  static forRoot(): ModuleWithProviders<ThemeModule> {
+    return {
+      ngModule: ThemeModule,
+      providers: [
+        NbMenuService,
+        ...NbThemeModule.forRoot(
+          {
+            name: 'default',
+          },
+          [ DEFAULT_THEME ],
+        ).providers,
+      ],
+    };
+  }
+ }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "expansiona-frusan": {
+    "frusan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/appFrusanPrototipo",
+            "outputPath": "dist/frusan",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,12 +28,11 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "src/app/@theme/styles/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
@@ -70,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "appFrusanPrototipo:build"
+            "browserTarget": "frusan:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "appFrusanPrototipo:build:production"
+              "browserTarget": "frusan:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "appFrusanPrototipo:build"
+            "browserTarget": "frusan:build"
           }
         },
         "test": {
@@ -118,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "appFrusanPrototipo:serve"
+            "devServerTarget": "frusan:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "appFrusanPrototipo:serve:production"
+              "devServerTarget": "frusan:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "appFrusanPrototipo",
+  "defaultProject": "frusan",
   "cli": {
     "analytics": false
   }

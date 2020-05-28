@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'frusan-one-column.layout',
+  selector: 'frusan-one-column-layout',
   styleUrls: ['./one-column.layout.component.scss'],
   template: `
    <nb-layout windowMode>
       <nb-layout-header fixed>
-
+        <frusan-header></frusan-header>
       </nb-layout-header>
 
       <nb-sidebar class="menu-sidebar" tag="menu-sidebar" state="compacted" responsive>
