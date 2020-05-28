@@ -4,7 +4,7 @@ import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '**', // por ahora
+    path: 'pages', // por ahora
     loadChildren: () => import('../app/pages/pages.module')
       .then(m => m.PagesModule),
   },

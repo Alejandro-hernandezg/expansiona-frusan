@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
-import { NbSidebarService, NbMenuService, NbThemeService, NbMediaBreakpointsService } from '@nebular/theme';
+import { NbSidebarService, NbMenuService, NbThemeService, NbMediaBreakpointsService, NbIconConfig } from '@nebular/theme';
 import { LayoutService } from 'src/app/@core/services';
 import { map, takeUntil } from 'rxjs/operators';
 
@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   userPictureOnly = false;
   user: Observable <any>;
 
-  userMenu = [ { title: 'Profile' }, { title: 'Log out', link: '/auth/login' } ];
+  userMenu = [ { title: 'Mi perfil' }, { title: 'Log out', link: '/auth/login' } ];
+  disabledIconConfig: NbIconConfig = { icon: 'settings-2-outline', pack: 'eva' };
 
   constructor(private sidebarService: NbSidebarService,
               private menuService: NbMenuService,

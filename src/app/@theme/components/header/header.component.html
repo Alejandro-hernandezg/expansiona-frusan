@@ -10,6 +10,20 @@
 </div>
 
 <div class="header-container">
+  <nb-actions size="medium">
+    <nb-action icon="search-outline"></nb-action>
+    <nb-action icon="power-outline"></nb-action>
+    <nb-action icon="person-outline"></nb-action>
+    <nb-action icon="home-outline"></nb-action>
+    <nb-action [icon]="disabledIconConfig" disabled></nb-action>
+    <nb-action>
+      Acciones
+    </nb-action>
+  </nb-actions>
+
+</div>
+
+<div class="header-container">
   <nb-actions size="small">
   <!--   <nb-action class="control-item">
       <nb-search type="rotate-layout"></nb-search>

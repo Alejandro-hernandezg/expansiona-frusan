@@ -7,6 +7,7 @@ import { MENU_ITEMS } from './pages-menu';
   styleUrls: ['pages.component.scss'],
   template: `
     <frusan-one-column-layout>
+    <nb-menu [items]="menu"></nb-menu>
       <router-outlet></router-outlet>
     </frusan-one-column-layout>
   `,
