@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: () => import('../app/pages/pages.module')
       .then(m => m.PagesModule),
   },
+  {
+    path: '', // por ahora
+    loadChildren: () => import('../app/pages/pages.module')
+      .then(m => m.PagesModule),
+  },
 ];
 
 const config: ExtraOptions = {
@@ -19,3 +24,5 @@ const config: ExtraOptions = {
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
