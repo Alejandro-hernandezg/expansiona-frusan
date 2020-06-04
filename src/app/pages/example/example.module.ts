@@ -2,9 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ExampleRoutingModule } from './example-routing.module';
-import { DashboardExampleComponent } from './components/dashboard-example/dashboard-example.component';
-import { NbCardModule, NbSelectModule, NbInputModule, NbAlertModule, NbButtonModule } from '@nebular/theme';
+import {
+  NbCardModule,
+  NbSelectModule,
+  NbInputModule,
+  NbAlertModule,
+  NbButtonModule,
+  NbTabsetModule,
+  NbIconModule,
+  NbDatepickerModule
+} from '@nebular/theme';
 import { FormsModule } from '@angular/forms';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { DashboardExampleComponent } from './dashboard-example/dashboard-example.component';
+import { PlanificationTableComponent } from './components/planification-table/planification-table.component';
 
 const NB_MODULES = [
   NbCardModule,
@@ -12,15 +23,19 @@ const NB_MODULES = [
   NbInputModule,
   NbAlertModule,
   NbButtonModule,
+  NbTabsetModule,
+  NbIconModule,
+  NbDatepickerModule.forRoot(),
 ];
 
 const COMPONENTS = [
-  DashboardExampleComponent
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
+    DashboardExampleComponent,
+    PlanificationTableComponent,
   ],
   imports: [
     CommonModule,
@@ -29,7 +44,7 @@ const COMPONENTS = [
     FormsModule
   ],
   bootstrap: [
-    DashboardExampleComponent
+    DashboardExampleComponent,
   ]
 })
 export class ExampleModule { }
