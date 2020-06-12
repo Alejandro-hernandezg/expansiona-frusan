@@ -1,12 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NbAuthComponent } from '@nebular/auth';
+import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: NbAuthComponent
+    component: NbAuthComponent,
+    children: [
+      {
+        path: 'login',
+        component: LoginComponent, // <---
+      },
+    ],
   },
 ];
 

@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { NbLoginComponent } from '@nebular/auth';
 
 @Component({
   selector: 'frusan-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent extends NbLoginComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  login() {
+    this.router.navigateByUrl('pages');
   }
 
 }
