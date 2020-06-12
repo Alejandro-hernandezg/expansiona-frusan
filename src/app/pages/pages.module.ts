@@ -2,20 +2,25 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { PagesRoutingModule } from './pages-routing.module';
-import { NbMenuModule } from '@nebular/theme';
+import { NbMenuModule, NbCardModule, NbButtonModule } from '@nebular/theme';
 import { ThemeModule } from '../@theme/theme.module';
 import { PagesComponent } from './pages.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     ThemeModule,
     NbMenuModule,
+    NbCardModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NbButtonModule,
   ]
 })
 export class PagesModule { }

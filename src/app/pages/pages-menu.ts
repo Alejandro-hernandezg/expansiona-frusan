@@ -33,7 +33,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
       {
         title: 'Evaluación de la Aplicación',
-        icon: 'file-outline',
+        icon: 'file-text-outline',
         link: '/pages',
       },
     ]

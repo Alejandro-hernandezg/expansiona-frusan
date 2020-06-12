@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanificationTableComponent implements OnInit {
 
-  ddlHuerto = '0';
 
   datosTabla = [
     {

@@ -10,22 +10,16 @@ import {
   NbButtonModule,
   NbTabsetModule,
   NbIconModule,
-  NbDatepickerModule
+  NbDatepickerModule,
+  NbThemeModule
 } from '@nebular/theme';
 import { FormsModule } from '@angular/forms';
-import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { DashboardExampleComponent } from './dashboard-example/dashboard-example.component';
 import { PlanificationTableComponent } from './components/planification-table/planification-table.component';
+import { FormularioInicioComponent } from './components/formulario-inicio/formulario-inicio.component';
 
 const NB_MODULES = [
-  NbCardModule,
-  NbSelectModule,
-  NbInputModule,
-  NbAlertModule,
-  NbButtonModule,
-  NbTabsetModule,
-  NbIconModule,
-  NbDatepickerModule.forRoot(),
+
 ];
 
 const COMPONENTS = [
@@ -36,12 +30,21 @@ const COMPONENTS = [
     ...COMPONENTS,
     DashboardExampleComponent,
     PlanificationTableComponent,
+    FormularioInicioComponent,
   ],
   imports: [
+    NbCardModule,
+    NbSelectModule,
+    NbInputModule,
+    NbAlertModule,
+    NbButtonModule,
+    NbTabsetModule,
+    NbIconModule,
+    NbDatepickerModule.forRoot(),
     CommonModule,
-    ...NB_MODULES,
     ExampleRoutingModule,
-    FormsModule
+    FormsModule,
+    NbThemeModule
   ],
   bootstrap: [
     DashboardExampleComponent,
