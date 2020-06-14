@@ -1,0 +1,46 @@
+<div class="container">
+    <nb-card>
+      <nb-card-header>
+        <h6>{{ titulo }}</h6>
+      </nb-card-header>
+      <nb-card-body>
+        <p>{{ mensaje }}</p>
+      </nb-card-body>
+      <nb-card-footer>
+        <div class="row">
+          <div class="col-6 text-center" *ngIf="tipoConfirmacion">
+            <button
+              nbButton
+              status="primary"
+              size="small"
+              (click)="aceptar()"
+            >
+              Aceptar
+           </button>
+          </div>
+          <div class="col-12 text-right" *ngIf="!tipoConfirmacion">
+            <button
+              nbButton
+              status="primary"
+              size="small"
+              (click)="aceptar()"
+            >
+              Aceptar
+           </button>
+          </div>
+          <div class="col-6 text-center" *ngIf="tipoConfirmacion">
+            <button
+              nbButton
+              status="danger"
+              size="small"
+              (click)="cancelar()"
+            >
+             Cancelar
+            </button>
+          </div>
+
+        </div>
+      </nb-card-footer>
+    </nb-card>
+
+</div>

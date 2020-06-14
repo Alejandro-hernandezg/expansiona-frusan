@@ -14,7 +14,8 @@ import {
   NbInputModule,
   NbButtonModule,
   NbIconModule,
-  NbSpinnerModule } from '@nebular/theme';
+  NbSpinnerModule,
+  NbDialogModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ThemeModule } from './@theme/theme.module';
 import { CoreModule } from './@core/@core.module';
@@ -41,6 +42,7 @@ const NB_MODULES = [
   NbCardModule,
   NbAuthModule.forRoot(),
   HttpClientModule,
+  NbDialogModule.forRoot(),
   NbSidebarModule.forRoot(),
   ThemeModule.forRoot(),
   CoreModule.forRoot(),

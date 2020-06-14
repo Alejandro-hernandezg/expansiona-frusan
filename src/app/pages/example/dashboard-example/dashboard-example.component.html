@@ -11,7 +11,28 @@
           </frusan-planification-table>
         </nb-tab>
         <nb-tab tabTitle="Ingreso Tarea">
-          Disponible para agregar contenido...
+          <div class="row mt-3">
+            <div class="col-3">
+              <button
+                nbButton
+                status="primary"
+                size="small"
+                (click)="modalConfirmacion()"
+              >
+                Modal Confirmación
+              </button>
+            </div>
+            <div class="col-3">
+              <button
+                nbButton
+                status="warning"
+                size="small"
+                (click)="modalAdvertencia()"
+              >
+                Modal Advertencia
+              </button>
+            </div>
+          </div>
         </nb-tab>
         <nb-tab tabTitle="Control Tarea">
           Disponible para agregar contenido...
