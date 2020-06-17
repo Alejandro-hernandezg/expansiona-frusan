@@ -9,11 +9,15 @@ import { ModalEjemploComponent } from '../components/modal-ejemplo/modal-ejemplo
 })
 export class DashboardExampleComponent implements OnInit {
 
+  mensajePadre = 'Hola Mundo';
+  mensajeDesdeHijo: string;
+
   constructor(
     private dialogService: NbDialogService,
   ) { }
 
   ngOnInit(): void {
+
   }
 
   modalConfirmacion() {
@@ -34,5 +38,9 @@ export class DashboardExampleComponent implements OnInit {
       },
       closeOnBackdropClick: false,
     }).onClose.subscribe( data => console.log(data) );
+  }
+
+  algunMetodo(algo) {
+    this.mensajeDesdeHijo = algo;
   }
 }

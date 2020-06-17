@@ -35,7 +35,14 @@
           </div>
         </nb-tab>
         <nb-tab tabTitle="Control Tarea">
-          Disponible para agregar contenido...
+          <frusan-tabla
+            [mensaje] = "mensajePadre"
+            (salida) = "algunMetodo($event)"
+            ></frusan-tabla>
+            <div class="container mt-3">
+              <h1>Soy el Componente Padre</h1>
+              Mensaje desde Hijo: {{ mensajeDesdeHijo }}
+            </div>
         </nb-tab>
         <nb-tab tabTitle="Reporte Detalle Tarea">
           Disponible para agregar contenido...
