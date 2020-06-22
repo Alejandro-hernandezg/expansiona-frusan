@@ -15,7 +15,8 @@ import {
   NbButtonModule,
   NbIconModule,
   NbSpinnerModule,
-  NbDialogModule} from '@nebular/theme';
+  NbDialogModule,
+  NbTooltipModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ThemeModule } from './@theme/theme.module';
 import { CoreModule } from './@core/@core.module';
@@ -27,25 +28,22 @@ import {NbAuthModule } from '@nebular/auth';
 
 
 const NB_MODULES = [
-  CommonModule,
+
   NbLayoutModule,
   NbCardModule,
   NbCheckboxModule,
   NbAlertModule,
   NbInputModule,
   NbButtonModule,
-  RouterModule,
-  FormsModule,
+  NbTooltipModule,
   NbIconModule,
   NbSpinnerModule,
   NbEvaIconsModule,
   NbCardModule,
   NbAuthModule.forRoot(),
-  HttpClientModule,
   NbDialogModule.forRoot(),
   NbSidebarModule.forRoot(),
   ThemeModule.forRoot(),
-  CoreModule.forRoot(),
   NbMenuModule.forRoot(),
 ];
 
@@ -54,10 +52,15 @@ const NB_MODULES = [
     AppComponent,
   ],
   imports: [
+    ...NB_MODULES,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ...NB_MODULES,
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    HttpClientModule,
+    CoreModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

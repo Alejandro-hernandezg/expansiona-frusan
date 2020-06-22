@@ -12,7 +12,8 @@ import {
   NbIconModule,
   NbDatepickerModule,
   NbThemeModule,
-  NbDialogModule
+  NbDialogModule,
+  NbTooltipModule
 } from '@nebular/theme';
 import { FormsModule } from '@angular/forms';
 import { DashboardExampleComponent } from './dashboard-example/dashboard-example.component';
@@ -20,6 +21,7 @@ import { PlanificationTableComponent } from './components/planification-table/pl
 import { FormularioInicioComponent } from './components/formulario-inicio/formulario-inicio.component';
 import { ModalEjemploComponent } from './components/modal-ejemplo/modal-ejemplo.component';
 import { TablaComponent } from './components/tabla/tabla.component';
+import { MantenedorComponent } from './components/mantenedor/mantenedor.component';
 
 const NB_MODULES = [
   NbCardModule,
@@ -27,6 +29,7 @@ const NB_MODULES = [
   NbInputModule,
   NbAlertModule,
   NbButtonModule,
+  NbTooltipModule,
   NbTabsetModule,
   NbIconModule,
   NbDialogModule.forChild(),
@@ -45,6 +48,7 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS,
     TablaComponent,
+    MantenedorComponent,
   ],
   imports: [
     CommonModule,
