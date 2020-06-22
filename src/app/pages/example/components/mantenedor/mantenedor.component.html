@@ -1,0 +1,72 @@
+<nb-card>
+  <nb-card-header>
+    <nb-icon class="mr-2" icon="home"></nb-icon>
+    <span>Mantenedor</span> <span style="font-weight: bolder;"> {{ titleType }}</span>
+  </nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-lg-6">
+        <div>
+          <nb-icon class="mr-2" icon="search"></nb-icon>
+          <label class="label" for="search">
+            <span>Búsqueda:</span>
+          </label>
+        </div>
+        <input
+          id="search"
+          nbInput
+          placeholder="Ingrese palabra clave..."
+        >
+      </div>
+      <div class="col-lg-6 text-right">
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <button nbButton size="small" status="success">+Agregar</button>
+      </div>
+    </div>
+    <div class="mt-1">
+      <table class="table table-bordered table-condensed table-striped table-hover table-sm text-center">
+        <thead class="headTable">
+          <tr>
+            <th *ngFor="let title of registers.cabeceras" id="{{ title.id }}">{{ title.nombre }}</th>
+            <th colspan="2"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let register of registers.registros">
+            <td>{{register.Aplicacion}}</td>
+            <td>{{register.Nombre | uppercase}}</td>
+            <td>{{register.SectorHuerto}}</td>
+            <td>{{register.ObjetivoAplicacion}}</td>
+            <td>{{register.Dimensiones}}</td>
+            <td>{{register.Producto}}</td>
+            <td>
+              <nb-icon
+                icon="edit"
+                nbTooltip="Editar"
+                (click)="editar()"
+                status="success"
+              ></nb-icon>
+            </td>
+            <td>
+              <nb-icon
+                icon="trash"
+                (click)="eliminar()"
+                status="danger"
+              ></nb-icon>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </nb-card-body>
+</nb-card>
+
+
+<!-- <th>Aplicación</th>
+            <th>Nombre</th>
+            <th>Sector</th>
+            <th>Objetivo</th>
+            <th>Dimensiones</th>
+            <th colspan="2"></th> -->

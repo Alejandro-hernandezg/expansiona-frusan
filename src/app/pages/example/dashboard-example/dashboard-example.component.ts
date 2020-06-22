@@ -10,8 +10,88 @@ import { ModalBuscarproductoComponent } from '../components/modal-buscarproducto
 })
 export class DashboardExampleComponent implements OnInit {
 
-  mensajePadre = 'Hola Mundo';
-  mensajeDesdeHijo: string;
+  mensajeDesdeHijo : string;
+
+  tituloMantendor = 'Huerto';
+
+  datosRegistros = {
+    cabeceras: [
+      {
+        id: 1,
+        nombre: 'Aplicación',
+      },
+      {
+        id: 2,
+        nombre: 'Nombre',
+      },
+      {
+        id: 3,
+        nombre: 'Sector',
+      },
+      {
+        id: 4,
+        nombre: 'Objetivo',
+      },
+      {
+        id: 5,
+        nombre: 'Dimensiones',
+      },
+      {
+        id: 6,
+        nombre: 'Producto',
+      }
+    ],
+    registros: [
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+      {
+        Aplicacion: 3,
+        Nombre: 'S Globe 2015',
+        SectorHuerto: 'L1-L2',
+        ObjetivoAplicacion: 'Nutrición',
+        Dimensiones: '100x100,',
+        Producto: 'CXF',
+      },
+    ],
+  };
 
   constructor(
     private dialogService: NbDialogService,
