@@ -32,16 +32,34 @@
                 Modal Advertencia
               </button>
             </div>
+            <div class="col-3">
+              <button
+                nbButton
+                status="primary"
+                size="small"
+                (click)="modalAbircomponente()"
+              >
+                Modal - Abrir Otro Componente
+              </button>
+            </div>
           </div>
         </nb-tab>
         <nb-tab tabTitle="Control Tarea">
-          Disponible para agregar contenido...
+          <frusan-tabla
+            [mensaje] = "mensajePadre"
+            [mensaje2] = "mensajePadre2"
+          ></frusan-tabla>
         </nb-tab>
         <nb-tab tabTitle="Reporte Detalle Tarea">
           Disponible para agregar contenido...
         </nb-tab>
         <nb-tab tabTitle="Reporte Simple Tarea">
           Disponible para agregar contenido...
+        </nb-tab>
+        <nb-tab tabTitle="Filtro Ejemplo">
+          <frusan-ejemplo-table>
+
+          </frusan-ejemplo-table>
         </nb-tab>
        </nb-tabset>
     </nb-card-body>

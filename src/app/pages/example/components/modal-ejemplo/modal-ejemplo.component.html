@@ -1,7 +1,11 @@
 <div class="container">
     <nb-card>
       <nb-card-header>
-        <h6>{{ titulo }}</h6>
+        <div>
+          <nb-icon class="mr-2 text-right" icon="sync-outline" *ngIf="tipoConfirmacion"></nb-icon>
+          <nb-icon class="mr-2 text-right" icon="alert-triangle-outline" *ngIf="!tipoConfirmacion"></nb-icon>
+          <label class="label" style="font-size: 12px;">{{ titulo }}</label>
+        </div>
       </nb-card-header>
       <nb-card-body>
         <p>{{ mensaje }}</p>

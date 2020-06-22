@@ -19,6 +19,9 @@ import { DashboardExampleComponent } from './dashboard-example/dashboard-example
 import { PlanificationTableComponent } from './components/planification-table/planification-table.component';
 import { FormularioInicioComponent } from './components/formulario-inicio/formulario-inicio.component';
 import { ModalEjemploComponent } from './components/modal-ejemplo/modal-ejemplo.component';
+import { ModalBuscarproductoComponent } from './components/modal-buscarproducto/modal-buscarproducto.component';
+import { TablaComponent } from './components/tabla/tabla.component';
+import { EjemploTableComponent } from './components/ejemplo-table/ejemplo-table.component';
 
 const NB_MODULES = [
   NbCardModule,
@@ -43,6 +46,9 @@ const COMPONENTS = [
 @NgModule({
   declarations: [
     ...COMPONENTS,
+    ModalBuscarproductoComponent,
+    TablaComponent,
+    EjemploTableComponent,
   ],
   imports: [
     CommonModule,
