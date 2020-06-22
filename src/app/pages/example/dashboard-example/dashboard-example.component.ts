@@ -11,13 +11,14 @@ import { ModalBuscarproductoComponent } from '../components/modal-buscarproducto
 export class DashboardExampleComponent implements OnInit {
 
   mensajePadre = 'Hola Mundo';
-  mensajePadre2 = 'Hello World';
+  mensajeDesdeHijo: string;
 
   constructor(
     private dialogService: NbDialogService,
   ) { }
 
   ngOnInit(): void {
+
   }
 
   modalConfirmacion() {
@@ -44,5 +45,9 @@ export class DashboardExampleComponent implements OnInit {
     this.dialogService.open(ModalBuscarproductoComponent, {
       closeOnBackdropClick: false,
     });
+  }
+
+  algunMetodo(algo) {
+    this.mensajeDesdeHijo = algo;
   }
 }
