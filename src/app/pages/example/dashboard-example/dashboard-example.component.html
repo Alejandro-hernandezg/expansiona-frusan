@@ -45,7 +45,14 @@
           </div>
         </nb-tab>
         <nb-tab tabTitle="Control Tarea">
-
+          <frusan-tabla
+            [mensaje] = "mensajePadre"
+            (salida) = "algunMetodo($event)"
+          ></frusan-tabla>
+          <div class="container mt-3">
+            <h1>Soy el Componente Padre</h1>
+            Mensaje desde Hijo: {{ mensajeDesdeHijo }}
+          </div>
         </nb-tab>
         <nb-tab tabTitle="Reporte Detalle Tarea">
           Disponible para agregar contenido...
@@ -60,6 +67,11 @@
           >
 
           </frusan-mantenedor>
+        </nb-tab>
+        <nb-tab tabTitle="Ejemplo-Filtro">
+          <frusan-ejemplo-table>
+
+          </frusan-ejemplo-table>
         </nb-tab>
        </nb-tabset>
     </nb-card-body>

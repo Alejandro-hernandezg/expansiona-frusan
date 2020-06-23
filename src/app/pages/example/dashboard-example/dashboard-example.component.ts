@@ -12,6 +12,8 @@ export class DashboardExampleComponent implements OnInit {
 
   mensajeDesdeHijo : string;
 
+  mensajePadre = 'Hola Mundo';
+  
   tituloMantendor = 'Huerto';
 
   datosRegistros = {
