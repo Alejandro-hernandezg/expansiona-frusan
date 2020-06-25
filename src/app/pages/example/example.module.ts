@@ -24,6 +24,12 @@ import { ModalBuscarproductoComponent } from './components/modal-buscarproducto/
 import { TablaComponent } from './components/tabla/tabla.component';
 import { EjemploTableComponent } from './components/ejemplo-table/ejemplo-table.component';
 import { MantenedorComponent } from './components/mantenedor/mantenedor.component';
+import { MantenedorMenuComponent } from './mantenedor-menu/mantenedor-menu.component';
+import { MantenedorParametrosComponent } from './mantenedor-parametros/mantenedor-parametros.component';
+import { MantenedorCampoComponent } from './mantenedor-campo/mantenedor-campo.component';
+import { MantenedorProductoComponent } from './mantenedor-producto/mantenedor-producto.component';
+import { MantenedorRecursoComponent } from './mantenedor-recurso/mantenedor-recurso.component';
+import { MantenedorSistemaComponent } from './mantenedor-sistema/mantenedor-sistema.component';
 
 const NB_MODULES = [
   NbCardModule,
@@ -43,7 +49,8 @@ const COMPONENTS = [
   DashboardExampleComponent,
   PlanificationTableComponent,
   FormularioInicioComponent,
-  ModalEjemploComponent
+  ModalEjemploComponent,
+  MantenedorComponent
 ];
 
 @NgModule({
@@ -53,6 +60,12 @@ const COMPONENTS = [
     TablaComponent,
     EjemploTableComponent,
     MantenedorComponent,
+    MantenedorMenuComponent,
+    MantenedorParametrosComponent,
+    MantenedorCampoComponent,
+    MantenedorProductoComponent,
+    MantenedorRecursoComponent,
+    MantenedorSistemaComponent,
   ],
   imports: [
     CommonModule,

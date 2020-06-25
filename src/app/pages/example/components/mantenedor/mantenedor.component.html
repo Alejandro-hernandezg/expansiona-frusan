@@ -1,8 +1,4 @@
 <nb-card>
-  <nb-card-header>
-    <nb-icon class="mr-2" icon="home"></nb-icon>
-    <span>Mantenedor</span> <span style="font-weight: bolder;"> {{ titleType }}</span>
-  </nb-card-header>
   <nb-card-body>
     <div class="row">
       <div class="col-lg-6">
@@ -21,7 +17,7 @@
       <div class="col-lg-6 text-right">
         <div>&nbsp;</div>
         <div>&nbsp;</div>
-        <button nbButton size="small" status="success">+Agregar</button>
+        <button nbButton size="small" status="primary">+Agregar</button>
       </div>
     </div>
     <div class="mt-1">
@@ -51,6 +47,7 @@
             <td>
               <nb-icon
                 icon="trash"
+                nbTooltip="Eliminar"
                 (click)="eliminar()"
                 status="danger"
               ></nb-icon>
