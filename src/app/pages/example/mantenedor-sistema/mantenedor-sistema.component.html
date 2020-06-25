@@ -1,0 +1,28 @@
+<div>
+    <nb-card>
+      <nb-card-header>
+        <nb-icon class="mr-2" icon="search"></nb-icon>Mantenedor Sistema
+      </nb-card-header>
+      <nb-card-body>
+        <nb-tabset>
+          <nb-tab tabTitle="Usuario">
+            <frusan-mantenedor
+              [titleType]="tituloMantendor"
+              [registers]= "datosRegistros"
+            >
+  
+            </frusan-mantenedor>
+          </nb-tab>
+          <nb-tab tabTitle="Perfil/Usuario">
+            <frusan-mantenedor
+              [titleType]="tituloMantendor"
+              [registers]= "datosRegistros"
+            >
+  
+            </frusan-mantenedor>
+          </nb-tab>
+
+         </nb-tabset>
+      </nb-card-body>
+    </nb-card>
+  </div>

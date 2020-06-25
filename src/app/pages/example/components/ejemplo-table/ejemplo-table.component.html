@@ -1,0 +1,148 @@
+<div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div>
+          <nb-icon class="mr-2" icon="search-outline"></nb-icon>
+          <label for="ddlBusqueda">Busqueda:</label>
+        </div>
+        <div>
+          <nb-select id="ddlBusqueda" [ngModel]="ddlBusqueda" (selectedChange)='onOptionsSelected($event)'>
+            <nb-option value='0'>--Seleccione--</nb-option>
+            <nb-option value='1'>Fecha Planificada</nb-option>
+            <nb-option value='2'>Huerto</nb-option>
+            <nb-option value='3'>Producto</nb-option>
+          </nb-select>
+        </div>
+      </div>
+
+      <div [hidden]="mostrarPlanificada" class="col-lg-3" id="cuadro-1">
+        <div>
+            <div>
+            <nb-icon class="mr-2" icon="calendar-outline"></nb-icon>
+            <label for="ddlPlanificada">Desde:</label>
+            </div>
+            <div>
+            <input nbInput placeholder="Ingrese Fecha" [nbDatepicker]="formpicker">
+                <nb-datepicker #formpicker></nb-datepicker>
+            </div>
+        </div>
+      </div>
+
+      <div [hidden]="mostrarPlanificada" class="col-lg-3" id="cuadro-1">
+        <div>
+            <div>
+            <nb-icon class="mr-2" icon="calendar-outline"></nb-icon>
+            <label for="ddlPlanificada">Hasta:</label>
+            </div>
+            <div>
+            <input nbInput placeholder="Ingrese Fecha" [nbDatepicker]="formpicker2">
+                <nb-datepicker #formpicker2></nb-datepicker>
+            </div>
+        </div>
+      </div>
+
+      <div [hidden]="mostrarHuerto" class="col-lg-3" id="cuadro-2">
+        <div>
+            <nb-icon class="mr-2" icon="image"></nb-icon>
+            <label for="ddlHuerto">Huerto:</label>
+          </div>
+        <div>
+          <nb-select id="ddlHuerto" [ngModel]="ddlHuerto">
+            <nb-option value='0'>--Seleccione--</nb-option>
+            <nb-option value='1'>S Globe 2015</nb-option>
+          </nb-select>
+        </div>
+      </div>
+
+      <div [hidden]="mostrarProducto" class="col-lg-3" id="cuadro-3">
+        <div>
+            <nb-icon class="mr-2" icon="file-outline"></nb-icon>
+            <label for="ddlProducto">Producto:</label>
+          </div>
+        <div>
+          <nb-select id="ddlProducto" [ngModel]="ddlProducto">
+            <nb-option value='0'>--Seleccione--</nb-option>
+            <nb-option value='1'>Sulfato de Mg</nb-option>
+          </nb-select>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="mt-2">
+         &nbsp;
+        </div>
+        <button nbButton class="buttonSize" status="success">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <BR /><BR /><BR /><BR />
+
+  <form>
+    <div class="form-group row">
+      <label for="inputSector" class="col-sm-2 col-form-label">Sector Huerto</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputSector" placeholder="Ingrese Sector Huerto">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputProducto" class="col-sm-2 col-form-label">Producto</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputProducto" placeholder="Ingrese Producto">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputObservacion" class="col-sm-2 col-form-label">Observación</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="inputObservacion" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button nbButton class="buttonSize" status="success">Buscar</button>
+      </div>
+    </div>
+  </form>
+  
+  <div class="mt-5">
+    <div class="row">
+      <div class="col-lg-6">
+      </div>
+      <div class="col-lg-6 text-right">
+        <button nbButton class="mr-2 buttonSize" size="small" status="success">Excel</button>
+        <button nbButton class="buttonSize" status="primary" size="small">+ Agregar</button>
+      </div>
+    </div>
+    <div class="mt-2">
+      <table class="table table-striped table-hover table-condensed table-sm table-bordered">
+        <thead>
+          <th>N° Aplicación</th>
+          <th>Fecha Planificada</th>
+          <th>Huerto</th>
+          <th>Sector Huerto</th>
+          <th>Objetivo de Aplicación</th>
+          <th>Producto</th>
+          <th>Ingrediente Activo</th>
+          <th>Dósis</th>
+          <th>Unidad de Medida</th>
+          <th>Dilución dosis/Lts</th>
+          <th>Volúmen aplicación Lt/ha</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of datosTabla">
+            <td>{{ item.Aplicacion}}</td>
+            <td>{{ item.FechaPlanificada}}</td>
+            <td>{{ item.Huerto}}</td>
+            <td>{{ item.SectorHuerto}}</td>
+            <td>{{ item.ObjetivoAplicacion}}</td>
+            <td>{{ item.Producto}}</td>
+            <td>{{ item.IngredienteActivo}}</td>
+            <td>{{ item.Dosis}}</td>
+            <td>{{ item.UnidadMedida}}</td>
+            <td>{{ item.Dilucion}}</td>
+            <td>{{ item.Volumen}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

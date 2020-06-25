@@ -1,0 +1,89 @@
+<div class="container">
+    <nb-card>
+      <nb-card-header>
+        <div>
+          <label class="label" style="font-size: 12px;">Buscar Producto</label>
+        </div>
+      </nb-card-header>
+
+      <nb-card-body>
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-5 text-left">
+                <div>
+                    <nb-icon class="mr-2" icon="home-outline"></nb-icon>
+                    <label class="label" for="ddlHuerto">Buscar por:</label>
+                </div>
+                <div>
+                    <nb-select
+                    id="ddlHuerto"
+                    class="space-box"
+                    placeholder="Seleccione"
+                    >
+                    <nb-option value='1'>Codigo</nb-option>
+                    <nb-option value='2'>Descripción</nb-option>
+                    </nb-select>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div>
+                    <nb-icon class="mr-2" icon="calendar-outline"></nb-icon>
+                    <label class="label" for="ddlHuerto">Producto:</label>
+                </div>
+                <div>
+                    <input type="text" class="form-control" id="inputSector" placeholder="Ingrese Producto">
+                </div>
+            </div>
+            <div class="col-lg-3  text-left align-bottom">
+            <div class="mt-2">
+            &nbsp;
+            </div>
+            <button
+                nbButton
+                class="buttonSize ml-3"
+                status="success"
+                size = "small"
+            >
+                Buscar
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="container mt-5">
+        <div class="mt-2">
+            <table class="table table-striped table-hover table-condensed table-sm table-bordered text-center" style="font-size: 12px;">
+            <thead>
+                <th>Codigo</th>
+                <th>Descripción</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of datosTablaproducto">
+                <td>{{ item.Codigo}}</td>
+                <td>{{ item.Descripcion}}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+      </nb-card-body>
+
+      <nb-card-footer>
+        <div class="row">
+          <div class="col-6 text-center">
+            <button
+              nbButton
+              status="danger"
+              size="small"
+              (click)="cerrar()"
+            >
+             Cerrar
+            </button>
+          </div>
+
+        </div>
+      </nb-card-footer>
+    </nb-card>
+
+</div>

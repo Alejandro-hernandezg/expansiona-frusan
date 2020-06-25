@@ -62,5 +62,42 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Ejemplo',
     icon: 'arrow-circle-right-outline',
     link: '/pages/example',
-  }
+  },
+  {
+    title: 'Mantenedores',
+    icon: 'layers-outline',
+    expanded: false,
+    children: [
+      {
+        title: 'Parametros',
+        icon: 'arrow-circle-right-outline',
+        link: '/pages/mantparametros',
+        data: 'MP1',
+      },
+      {
+        title: 'Campo',
+        icon: 'arrow-circle-right-outline',
+        link: '/pages/mantcampo',
+        data: 'MP2',
+      },
+      {
+        title: 'Producto',
+        icon: 'arrow-circle-right-outline',
+        link: '/pages/mantproducto',
+        data: 'MP3',
+      },
+      {
+        title: 'Recurso',
+        icon: 'arrow-circle-right-outline',
+        link: '/pages/mantrecurso',
+        data: 'MP4',
+      },
+      {
+        title: 'Sistema',
+        icon: 'arrow-circle-right-outline',
+        link: '/pages/mantsistema',
+        data: 'MP5',
+      },
+    ]
+  },
 ];
