@@ -9,10 +9,19 @@ const routes: Routes = [
       .then(m => m.AuthModule),
   },
   {
-    path: 'pages', // por ahora
+    path: 'pages',
     loadChildren: () => import('./pages/pages.module')
       .then(m => m.PagesModule),
   },
+  {
+    path: '',
+    redirectTo: 'pages',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'auth',
+  }
 ];
 
 const config: ExtraOptions = {
