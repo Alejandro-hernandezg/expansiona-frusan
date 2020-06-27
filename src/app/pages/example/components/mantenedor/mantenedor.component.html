@@ -30,12 +30,12 @@
         </thead>
         <tbody>
           <tr *ngFor="let register of registers.registros">
-            <td>{{register.Aplicacion}}</td>
-            <td>{{register.Nombre | uppercase}}</td>
-            <td>{{register.SectorHuerto}}</td>
-            <td>{{register.ObjetivoAplicacion}}</td>
-            <td>{{register.Dimensiones}}</td>
-            <td>{{register.Producto}}</td>
+            <td *ngIf="greaterThan(countcolumn, 1)">{{register.Aplicacion}}</td>
+            <td *ngIf="greaterThan(countcolumn, 2)">{{register.Nombre | uppercase}}</td>
+            <td *ngIf="greaterThan(countcolumn, 3)">{{register.SectorHuerto}}</td>
+            <td *ngIf="greaterThan(countcolumn, 4)">{{register.ObjetivoAplicacion}}</td>
+            <td *ngIf="greaterThan(countcolumn, 5)">{{register.Dimensiones}}</td>
+            <td *ngIf="greaterThan(countcolumn, 6)">{{register.Producto}}</td>
             <td>
               <nb-icon
                 icon="edit"

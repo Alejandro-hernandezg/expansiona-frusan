@@ -8,7 +8,8 @@
           <nb-tab tabTitle="Unidad de medida">
             <frusan-mantenedor
               [titleType]="tituloMantendor"
-              [registers]= "datosRegistros"
+              [registers]= "datosUnidadMedida"
+              [countcolumn]="cantidadUnidad"
             >
   
             </frusan-mantenedor>
@@ -16,7 +17,8 @@
           <nb-tab tabTitle="Tipo Labor">
             <frusan-mantenedor
               [titleType]="tituloMantendor"
-              [registers]= "datosRegistros"
+              [registers]= "datosTipoLabor"
+              [countcolumn]="cantidadLabor"
             >
   
             </frusan-mantenedor>
@@ -24,7 +26,8 @@
           <nb-tab tabTitle="Concepto/Valor">
             <frusan-mantenedor
               [titleType]="tituloMantendor"
-              [registers]= "datosRegistros"
+              [registers]= "datosConceptoValor"
+              [countcolumn]="cantidadConcepto"
             >
   
             </frusan-mantenedor>
