@@ -15,6 +15,7 @@ export class DashboardExampleComponent implements OnInit {
   mensajePadre = 'Hola Mundo';
   
   tituloMantendor = 'Huerto';
+  cantidadColumna = 6;
 
   datosRegistros = {
     cabeceras: [

@@ -9,6 +9,7 @@ import { NbDialogService } from '@nebular/theme';
 export class MantenedorProductoComponent implements OnInit {
 
   tituloMantendor = 'Principal';
+  cantidadColumna = 6;
 
   datosRegistros = {
     cabeceras: [

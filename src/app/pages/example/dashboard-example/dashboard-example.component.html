@@ -7,7 +7,6 @@
       <nb-tabset>
         <nb-tab tabTitle="Planificación">
           <frusan-planification-table>
-
           </frusan-planification-table>
         </nb-tab>
         <nb-tab tabTitle="Ingreso Tarea">
@@ -45,14 +44,7 @@
           </div>
         </nb-tab>
         <nb-tab tabTitle="Control Tarea">
-          <frusan-tabla
-            [mensaje] = "mensajePadre"
-            (salida) = "algunMetodo($event)"
-          ></frusan-tabla>
-          <div class="container mt-3">
-            <h1>Soy el Componente Padre</h1>
-            Mensaje desde Hijo: {{ mensajeDesdeHijo }}
-          </div>
+          Disponible para agregar contenido...
         </nb-tab>
         <nb-tab tabTitle="Reporte Detalle Tarea">
           Disponible para agregar contenido...
@@ -60,17 +52,16 @@
         <nb-tab tabTitle="Reporte Simple Tarea">
           Disponible para agregar contenido...
         </nb-tab>
-        <nb-tab tabTitle="Mantenedores">
+        <nb-tab tabTitle="Mantenedor">
           <frusan-mantenedor
             [titleType]="tituloMantendor"
             [registers]= "datosRegistros"
+            [countcolumn]="cantidadColumna"
           >
-
           </frusan-mantenedor>
         </nb-tab>
         <nb-tab tabTitle="Ejemplo-Filtro">
           <frusan-ejemplo-table>
-
           </frusan-ejemplo-table>
         </nb-tab>
        </nb-tabset>

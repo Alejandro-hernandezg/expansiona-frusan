@@ -17,7 +17,6 @@ import {
 import { DEFAULT_THEME } from './styles/theme.defaut';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HeaderComponent, FooterComponent } from './components';
-import { NbMenuInternalService } from '@nebular/theme/components/menu/menu.service';
 
 
 const NB_MODULES = [
