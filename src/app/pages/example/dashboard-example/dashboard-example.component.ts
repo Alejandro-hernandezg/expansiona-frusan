@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
 import { ModalEjemploComponent } from '../components/modal-ejemplo/modal-ejemplo.component';
 import { ModalBuscarproductoComponent } from '../components/modal-buscarproducto/modal-buscarproducto.component';
+import { ApiPruebaService } from '../services/api-prueba.service';
 
 @Component({
   selector: 'frusan-dashboard-example',
@@ -10,10 +11,12 @@ import { ModalBuscarproductoComponent } from '../components/modal-buscarproducto
 })
 export class DashboardExampleComponent implements OnInit {
 
-  mensajeDesdeHijo : string;
+  resultadoApi: any;
+
+  mensajeDesdeHijo: string;
 
   mensajePadre = 'Hola Mundo';
-  
+
   tituloMantendor = 'Huerto';
   cantidadColumna = 6;
 
@@ -98,6 +101,7 @@ export class DashboardExampleComponent implements OnInit {
 
   constructor(
     private dialogService: NbDialogService,
+    private http: ApiPruebaService,
   ) { }
 
   ngOnInit(): void {
@@ -124,7 +128,7 @@ export class DashboardExampleComponent implements OnInit {
     }).onClose.subscribe( data => console.log(data) );
   }
 
-  modalAbircomponente(){
+  modalAbircomponente() {
     this.dialogService.open(ModalBuscarproductoComponent, {
       closeOnBackdropClick: false,
     });
@@ -132,5 +136,21 @@ export class DashboardExampleComponent implements OnInit {
 
   algunMetodo(algo) {
     this.mensajeDesdeHijo = algo;
+  }
+
+  obtenerDatosApi() {
+    // Debe existir la url que vamos a consultar.
+    // Debe existir variable a quién se le va a asignar los datos respuesta api
+    // Recordar que lo que retorna es un Observable, por lo tanto usamos '.subscribe()' para obtener la data.'
+
+    const urlPrueba = 'https://api.exchangeratesapi.io/latest';
+    this.http.getPrueba(urlPrueba).subscribe(data => {
+      if (data) {
+        this.resultadoApi = data;
+        console.log(this.resultadoApi);
+      } else {
+        alert('Información no disponible en este momento, por favor intente más tarde.');
+      }
+    });
   }
 }
