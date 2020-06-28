@@ -9,7 +9,7 @@
           <frusan-planification-table>
           </frusan-planification-table>
         </nb-tab>
-        <nb-tab tabTitle="Ingreso Tarea">
+        <nb-tab tabTitle="Tipo Modal">
           <div class="row mt-3">
             <div class="col-3">
               <button
@@ -43,8 +43,51 @@
             </div>
           </div>
         </nb-tab>
-        <nb-tab tabTitle="Control Tarea">
-          Disponible para agregar contenido...
+        <nb-tab tabTitle="Control Api">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <button
+                  nbButton
+                  status="success"
+                  size="small"
+                  (click)="obtenerDatosApi()"
+                >
+                  Consulta Api Conversor Moneda
+                </button>
+              </div>
+              <div class="col-9">
+                <table class="table table-sm table-striped table-condensed table-hover text-center"
+                  *ngIf="resultadoApi"
+                >
+                  <thead class="headTable">
+                    <tr>
+                      <th colspan="2">Base</th>
+                      <th colspan="2">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">{{ resultadoApi.base }}</td>
+                      <td colspan="2">{{ resultadoApi.date }}</td>
+                    </tr>
+                    <tr class="headTable">
+                      <th>CAD</th>
+                      <th>CHF</th>
+                      <th>GBP</th>
+                      <th>SEK</th>
+                    </tr>
+                    <tr>
+                      <td>{{ resultadoApi.rates.CAD }}</td>
+                      <td>{{ resultadoApi.rates.CHF }}</td>
+                      <td>{{ resultadoApi.rates.GBP }}</td>
+                      <td>{{ resultadoApi.rates.SEK }}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </nb-tab>
         <nb-tab tabTitle="Reporte Detalle Tarea">
           Disponible para agregar contenido...
