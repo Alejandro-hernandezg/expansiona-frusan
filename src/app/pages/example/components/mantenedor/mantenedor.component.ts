@@ -11,6 +11,7 @@ export class MantenedorComponent implements OnInit {
 
   @Input() titleType: string;
   @Input() registers: any;
+  @Input() countcolumn: any;
 
 
   constructor(private dialogService: NbDialogService) { }
@@ -31,6 +32,10 @@ export class MantenedorComponent implements OnInit {
       },
       closeOnBackdropClick: false
     });
+  }
+
+  public greaterThan(subj: number, num: number) {
+    return subj >= num;
   }
 
 }
