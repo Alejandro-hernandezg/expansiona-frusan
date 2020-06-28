@@ -18,6 +18,71 @@ export class EjemploTableComponent implements OnInit {
 
   datosTabla = [
     {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+  {
     Aplicacion: 3,
     FechaPlanificada: '04-06-2020',
     Huerto: 'S Globe 2015',
@@ -42,124 +107,59 @@ export class EjemploTableComponent implements OnInit {
       UnidadMedida: 'Lt' ,
       Dilucion: '100',
       Volumen: '1000',
-      },
-      {
-        Aplicacion: 3,
-        FechaPlanificada: '04-06-2020',
-        Huerto: 'S Globe 2015',
-        SectorHuerto: 'L1-L2',
-        ObjetivoAplicacion: 'Nutrición',
-        Producto: 'Sulfato de Mg',
-        IngredienteActivo: 'Mg' ,
-        Dosis: '2',
-        UnidadMedida: 'Lt' ,
-        Dilucion: '100',
-        Volumen: '1000',
-        },
-        {
-          Aplicacion: 3,
-          FechaPlanificada: '04-06-2020',
-          Huerto: 'S Globe 2015',
-          SectorHuerto: 'L1-L2',
-          ObjetivoAplicacion: 'Nutrición',
-          Producto: 'Sulfato de Mg',
-          IngredienteActivo: 'Mg' ,
-          Dosis: '2',
-          UnidadMedida: 'Lt' ,
-          Dilucion: '100',
-          Volumen: '1000',
-          },
-          {
-            Aplicacion: 3,
-            FechaPlanificada: '04-06-2020',
-            Huerto: 'S Globe 2015',
-            SectorHuerto: 'L1-L2',
-            ObjetivoAplicacion: 'Nutrición',
-            Producto: 'Sulfato de Mg',
-            IngredienteActivo: 'Mg' ,
-            Dosis: '2',
-            UnidadMedida: 'Lt' ,
-            Dilucion: '100',
-            Volumen: '1000',
-            },
-            {
-              Aplicacion: 3,
-              FechaPlanificada: '04-06-2020',
-              Huerto: 'S Globe 2015',
-              SectorHuerto: 'L1-L2',
-              ObjetivoAplicacion: 'Nutrición',
-              Producto: 'Sulfato de Mg',
-              IngredienteActivo: 'Mg' ,
-              Dosis: '2',
-              UnidadMedida: 'Lt' ,
-              Dilucion: '100',
-              Volumen: '1000',
-              },
-              {
-                Aplicacion: 3,
-                FechaPlanificada: '04-06-2020',
-                Huerto: 'S Globe 2015',
-                SectorHuerto: 'L1-L2',
-                ObjetivoAplicacion: 'Nutrición',
-                Producto: 'Sulfato de Mg',
-                IngredienteActivo: 'Mg' ,
-                Dosis: '2',
-                UnidadMedida: 'Lt' ,
-                Dilucion: '100',
-                Volumen: '1000',
-                },
-                {
-                  Aplicacion: 3,
-                  FechaPlanificada: '04-06-2020',
-                  Huerto: 'S Globe 2015',
-                  SectorHuerto: 'L1-L2',
-                  ObjetivoAplicacion: 'Nutrición',
-                  Producto: 'Sulfato de Mg',
-                  IngredienteActivo: 'Mg' ,
-                  Dosis: '2',
-                  UnidadMedida: 'Lt' ,
-                  Dilucion: '100',
-                  Volumen: '1000',
-                  },
-                  {
-                    Aplicacion: 3,
-                    FechaPlanificada: '04-06-2020',
-                    Huerto: 'S Globe 2015',
-                    SectorHuerto: 'L1-L2',
-                    ObjetivoAplicacion: 'Nutrición',
-                    Producto: 'Sulfato de Mg',
-                    IngredienteActivo: 'Mg' ,
-                    Dosis: '2',
-                    UnidadMedida: 'Lt' ,
-                    Dilucion: '100',
-                    Volumen: '1000',
-                    },
-                    {
-                      Aplicacion: 3,
-                      FechaPlanificada: '04-06-2020',
-                      Huerto: 'S Globe 2015',
-                      SectorHuerto: 'L1-L2',
-                      ObjetivoAplicacion: 'Nutrición',
-                      Producto: 'Sulfato de Mg',
-                      IngredienteActivo: 'Mg' ,
-                      Dosis: '2',
-                      UnidadMedida: 'Lt' ,
-                      Dilucion: '100',
-                      Volumen: '1000',
-                      },
-                      {
-                        Aplicacion: 3,
-                        FechaPlanificada: '04-06-2020',
-                        Huerto: 'S Globe 2015',
-                        SectorHuerto: 'L1-L2',
-                        ObjetivoAplicacion: 'Nutrición',
-                        Producto: 'Sulfato de Mg',
-                        IngredienteActivo: 'Mg' ,
-                        Dosis: '2',
-                        UnidadMedida: 'Lt' ,
-                        Dilucion: '100',
-                        Volumen: '1000',
-                        },
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
+    {
+      Aplicacion: 3,
+      FechaPlanificada: '04-06-2020',
+      Huerto: 'S Globe 2015',
+      SectorHuerto: 'L1-L2',
+      ObjetivoAplicacion: 'Nutrición',
+      Producto: 'Sulfato de Mg',
+      IngredienteActivo: 'Mg' ,
+      Dosis: '2',
+      UnidadMedida: 'Lt' ,
+      Dilucion: '100',
+      Volumen: '1000',
+    },
   ];
 
   constructor() { }
@@ -168,28 +168,25 @@ export class EjemploTableComponent implements OnInit {
     this.iniciarValores();
   }
 
-  iniciarValores(){
+  iniciarValores() {
     this.mostrarHuerto = true;
     this.mostrarPlanificada = true;
     this.mostrarProducto = true;
   }
 
 
-  onOptionsSelected(eve){
+  onOptionsSelected(eve) {
     this.iniciarValores();
 
-    if (eve === '2')
-    {
+    if (eve === '2') {
       this.mostrarHuerto = false;
     }
 
-    if (eve === '1')
-    {
+    if (eve === '1') {
       this.mostrarPlanificada = false;
     }
 
-    if (eve === '3')
-    {
+    if (eve === '3') {
       this.mostrarProducto = false;
     }
 

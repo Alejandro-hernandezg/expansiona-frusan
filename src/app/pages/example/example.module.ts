@@ -30,6 +30,7 @@ import { MantenedorCampoComponent } from './mantenedor-campo/mantenedor-campo.co
 import { MantenedorProductoComponent } from './mantenedor-producto/mantenedor-producto.component';
 import { MantenedorRecursoComponent } from './mantenedor-recurso/mantenedor-recurso.component';
 import { MantenedorSistemaComponent } from './mantenedor-sistema/mantenedor-sistema.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const NB_MODULES = [
   NbCardModule,
@@ -71,6 +72,7 @@ const COMPONENTS = [
     CommonModule,
     ExampleRoutingModule,
     FormsModule,
+    HttpClientModule,
     ...NB_MODULES
   ],
   bootstrap: [
