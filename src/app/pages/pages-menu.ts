@@ -100,4 +100,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ]
   },
+  {
+    title: 'Mantenedores 2',
+    icon: 'arrow-circle-right-outline',
+    link: '/pages/mantenedores',
+  },
 ];
