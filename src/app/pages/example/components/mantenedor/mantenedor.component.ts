@@ -23,8 +23,12 @@ export class MantenedorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  editar() {
+  editar(datosRegistro) {
+
     this.dialogService.open(ModalModificaregistroComponent, {
+      context: {
+        registro: datosRegistro,
+      },
       closeOnBackdropClick: false,
     });
   }

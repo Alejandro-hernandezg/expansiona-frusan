@@ -15,7 +15,7 @@ import {
   NbDialogModule,
   NbTooltipModule
 } from '@nebular/theme';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardExampleComponent } from './dashboard-example/dashboard-example.component';
 import { PlanificationTableComponent } from './components/planification-table/planification-table.component';
 import { FormularioInicioComponent } from './components/formulario-inicio/formulario-inicio.component';
@@ -79,6 +79,7 @@ const COMPONENTS = [
     ExampleRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     ...NB_MODULES
   ],
   bootstrap: [

@@ -8,6 +8,8 @@ import { NbDialogRef } from '@nebular/theme';
 })
 export class ModalModificaregistroComponent implements OnInit {
 
+  registro: any;
+
   constructor(
     private dialogRef: NbDialogRef<any>
   ) { }
