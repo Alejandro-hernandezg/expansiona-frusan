@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatTableDataSource } from '@angular/material/table';
 import { NbDialogService } from '@nebular/theme';
 import { ModalEjemploComponent } from '../modal-ejemplo/modal-ejemplo.component';
 import { ModalAgregaregistroComponent } from '../modal-agregaregistro/modal-agregaregistro.component';
@@ -16,9 +15,9 @@ export class MantenedorComponent implements OnInit {
   @Input() registers: any;
   @Input() countcolumn: any;
 
-  
+
   constructor(private dialogService: NbDialogService) {
-    
+
    }
 
   ngOnInit(): void {
