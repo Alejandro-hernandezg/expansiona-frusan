@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'pages',
+    redirectTo: 'auth',
     pathMatch: 'full',
   },
   {
