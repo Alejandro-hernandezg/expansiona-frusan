@@ -1,28 +1,51 @@
-<div class="container">
+<div class="container" style="width: 600px;">
     <nb-card>
-        <nb-card-header>
+        <nb-card-header class="headTable">
             <div>
-                <label class="label" style="font-size: 12px;">Modificar</label>
+                <nb-icon icon="file-text-outline" class="mr-2"></nb-icon>
+                <span>
+                    Editar
+                </span>
             </div>
         </nb-card-header>
 
         <nb-card-body>
             <div class="container">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Descripción</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" value="S GLOBE 2015">
+                    <label class="label" for="txtDescripcion">
+                        <nb-icon icon="edit-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Descripción
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" id="txtDescripcion" value="S GLOBE 2015">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Abreviación</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput2" value="L1-L2">
+                    <label class="label" for="txtAbreviacion">
+                        <nb-icon icon="flash-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Abreviación
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" id="txtAbreviacion" value="L1-L2">
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Observación</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Por solicitud del area comercial.</textarea>
+                    <label class="label" for="txtObservacion">
+                        <nb-icon icon="eye-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Observación
+                        </span>
+                    </label>
+                    <textarea class="form-control" id="txtObservacion" rows="3">Por solicitud del area comercial.</textarea>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlSelect1">Vigencia</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <label class="label" for="ddlVigencia">
+                        <nb-icon icon="checkmark-circle-2-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Vigencia
+                        </span>
+                    </label>
+                    <select class="form-control" id="ddlVigencia">
                         <option>Si</option>
                         <option>No</option>
                     </select>
