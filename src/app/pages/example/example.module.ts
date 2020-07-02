@@ -31,9 +31,10 @@ import { MantenedorProductoComponent } from './mantenedor-producto/mantenedor-pr
 import { MantenedorRecursoComponent } from './mantenedor-recurso/mantenedor-recurso.component';
 import { MantenedorSistemaComponent } from './mantenedor-sistema/mantenedor-sistema.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ModalAgregaregistroComponent } from './components/modal-agregaregistro/modal-agregaregistro.component';
-import { ModalModificaregistroComponent } from './components/modal-modificaregistro/modal-modificaregistro.component';
 import { MenuMantenedorComponent } from './menu-mantenedor/menu-mantenedor.component';
+import { ModalModificaregistroComponent } from './components/modal-modificaregistro/modal-modificaregistro.component';
+import { ModalAgregaregistroComponent } from './components/modal-agregaregistro/modal-agregaregistro.component';
+
 
 const NB_MODULES = [
   NbCardModule,
@@ -54,25 +55,24 @@ const COMPONENTS = [
   PlanificationTableComponent,
   FormularioInicioComponent,
   ModalEjemploComponent,
-  MantenedorComponent
+  MantenedorComponent,
+  TablaComponent,
+  ModalBuscarproductoComponent,
+  EjemploTableComponent,
+  MantenedorMenuComponent,
+  MantenedorParametrosComponent,
+  MantenedorCampoComponent,
+  MantenedorProductoComponent,
+  MantenedorRecursoComponent,
+  MantenedorSistemaComponent,
+  ModalAgregaregistroComponent,
+  ModalModificaregistroComponent,
+  MenuMantenedorComponent,
 ];
 
 @NgModule({
   declarations: [
     ...COMPONENTS,
-    ModalBuscarproductoComponent,
-    TablaComponent,
-    EjemploTableComponent,
-    MantenedorComponent,
-    MantenedorMenuComponent,
-    MantenedorParametrosComponent,
-    MantenedorCampoComponent,
-    MantenedorProductoComponent,
-    MantenedorRecursoComponent,
-    MantenedorSistemaComponent,
-    ModalAgregaregistroComponent,
-    ModalModificaregistroComponent,
-    MenuMantenedorComponent,
   ],
   imports: [
     CommonModule,
