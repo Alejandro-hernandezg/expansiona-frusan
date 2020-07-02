@@ -8,6 +8,7 @@ import { MantenedorCampoComponent } from './example/mantenedor-campo/mantenedor-
 import { MantenedorProductoComponent } from './example/mantenedor-producto/mantenedor-producto.component';
 import { MantenedorRecursoComponent } from './example/mantenedor-recurso/mantenedor-recurso.component';
 import { MantenedorSistemaComponent } from './example/mantenedor-sistema/mantenedor-sistema.component';
+import { MenuMantenedorComponent } from './example/menu-mantenedor/menu-mantenedor.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,7 @@ const routes: Routes = [
         },
         {
           path: 'mantenedores',
-          component: MantenedorMenuComponent,
+          component: MenuMantenedorComponent,
         },
       ]
   },
