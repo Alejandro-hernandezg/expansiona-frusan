@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
 import { ModalEjemploComponent } from '../modal-ejemplo/modal-ejemplo.component';
+import { ModalAgregaregistroComponent } from '../modal-agregaregistro/modal-agregaregistro.component';
+import { ModalModificaregistroComponent } from '../modal-modificaregistro/modal-modificaregistro.component';
 
 @Component({
   selector: 'frusan-mantenedor',
@@ -14,13 +16,17 @@ export class MantenedorComponent implements OnInit {
   @Input() countcolumn: any;
 
 
-  constructor(private dialogService: NbDialogService) { }
+  constructor(private dialogService: NbDialogService) {
+
+   }
 
   ngOnInit(): void {
   }
 
   editar() {
-
+    this.dialogService.open(ModalModificaregistroComponent, {
+      closeOnBackdropClick: false,
+    });
   }
 
   eliminar() {
@@ -36,6 +42,18 @@ export class MantenedorComponent implements OnInit {
 
   public greaterThan(subj: number, num: number) {
     return subj >= num;
+  }
+
+  modalAgregarregistrocomponente() {
+    this.dialogService.open(ModalAgregaregistroComponent, {
+      closeOnBackdropClick: false,
+    });
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.registers.filter = filterValue.trim().toLowerCase();
+
   }
 
 }
