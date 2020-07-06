@@ -6,25 +6,21 @@
       <nb-card-body>
         <nb-tabset>
           <nb-tab tabTitle="Unidad de medida">
-
+            <frusan-unidad-medida
+                [datos] = "unidadMedidaData"
+            >
+  
+            </frusan-unidad-medida>
           </nb-tab>
           <nb-tab tabTitle="Tipo Labor">
-            <frusan-mantenedor
-              [titleType]="tituloMantendor"
-              [registers]= "datosTipoLabor"
-              [countcolumn]="cantidadLabor"
-            >
+            <frusan-tipo-labor>
   
-            </frusan-mantenedor>
+            </frusan-tipo-labor>
           </nb-tab>
           <nb-tab tabTitle="Concepto/Valor">
-            <frusan-mantenedor
-              [titleType]="tituloMantendor"
-              [registers]= "datosConceptoValor"
-              [countcolumn]="cantidadConcepto"
-            >
+            <frusan-concepto-valor>
   
-            </frusan-mantenedor>
+            </frusan-concepto-valor>
           </nb-tab>
          </nb-tabset>
       </nb-card-body>

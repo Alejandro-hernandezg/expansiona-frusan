@@ -68,8 +68,8 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td colspan="2">{{ resultadoApi.base }}</td>
-                      <td colspan="2">{{ resultadoApi.date }}</td>
+                      <td colspan="2">{{ resultadoApi.TodoOK }}</td>
+                      <td colspan="2">{{ resultadoApi.Mensaje }}</td>
                     </tr>
                     <tr class="headTable">
                       <th>CAD</th>
@@ -77,11 +77,11 @@
                       <th>GBP</th>
                       <th>SEK</th>
                     </tr>
-                    <tr>
-                      <td>{{ resultadoApi.rates.CAD }}</td>
-                      <td>{{ resultadoApi.rates.CHF }}</td>
-                      <td>{{ resultadoApi.rates.GBP }}</td>
-                      <td>{{ resultadoApi.rates.SEK }}</td>
+                    <tr *ngFor="let register of resultadoApi.Datos">
+                      <td>{{ register.Correlativo }}</td>
+                      <td>{{ register.Descripcion }}</td>
+                      <td>{{ register.Abreviacion }}</td>
+                      <td>{{ register.Tipo }}</td>
                     </tr>
                   </tbody>
                 </table>

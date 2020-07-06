@@ -22,6 +22,13 @@ const routes: Routes = [
             .then(m => m.ExampleModule),
         },
         {
+          path: 'maintainers',
+          loadChildren: () => import('./maintainers/maintainers.module')
+            .then(m => m.MaintainersModule),
+        },
+
+
+/*         {
           path: 'mantparametros',
           component: MantenedorParametrosComponent,
         },
@@ -44,7 +51,7 @@ const routes: Routes = [
         {
           path: 'mantenedores',
           component: MenuMantenedorComponent,
-        },
+        }, */
       ]
   },
 ];

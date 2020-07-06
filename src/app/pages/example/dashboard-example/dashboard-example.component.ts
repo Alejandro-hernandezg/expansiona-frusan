@@ -143,7 +143,7 @@ export class DashboardExampleComponent implements OnInit {
     // Debe existir variable a quién se le va a asignar los datos respuesta api
     // Recordar que lo que retorna es un Observable, por lo tanto usamos '.subscribe()' para obtener la data.'
 
-    const urlPrueba = 'https://api.exchangeratesapi.io/latest';
+    const urlPrueba = '/api/UnidadMedida';
     this.http.getPrueba(urlPrueba).subscribe(data => {
       if (data) {
         this.resultadoApi = data;
