@@ -14,4 +14,13 @@ export class UnidadMedidaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  editar() {
+  }
+
+  eliminar() {
+  }
+
+  modalAgregarregistrocomponente(){
+  }
+
 }
