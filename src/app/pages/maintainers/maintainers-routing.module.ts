@@ -1,7 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ParametersComponent } from './parameters/parameters.component';
-import { CountrysideComponent } from './countryside/countryside.component';
+import { FieldComponent } from './Field/Field.component';
 
 
 const routes: Routes = [
@@ -10,8 +10,8 @@ const routes: Routes = [
   component: ParametersComponent,
   },
   {
-    path: 'countryside',
-    component: CountrysideComponent,
+    path: 'field',
+    component: FieldComponent,
     },
   {
   path: '',
