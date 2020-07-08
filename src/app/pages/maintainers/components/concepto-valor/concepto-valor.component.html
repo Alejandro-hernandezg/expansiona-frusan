@@ -38,7 +38,7 @@
           </thead>
           <tbody>
             <tr *ngFor="let register of datos.Datos">
-              <td class="text-left">{{register.Descripcion | uppercase}}</td>
+              <td class="text-center">{{register.Descripcion | uppercase}}</td>
               <td>
                 <nb-icon icon="checkmark-circle" status="success"   *ngIf="register.Vigencia === 'S'"></nb-icon>
                 <nb-icon icon="close-circle" status="danger"   *ngIf="register.Vigencia !== 'S'"></nb-icon>
