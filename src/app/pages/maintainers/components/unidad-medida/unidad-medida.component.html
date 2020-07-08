@@ -1,75 +1,72 @@
-<nb-card>
-    <nb-card-body>
-      <div class="row">
-        <div class="col-lg-6">
-<!--           <div>
-            <nb-icon class="mr-2" icon="search"></nb-icon>
-            <label class="label" for="search">
-              <span>Búsqueda:</span>
-            </label>
-          </div>
-          <input
-            id="search"
-            nbInput
-            placeholder="Ingrese palabra clave..."
-          > -->
-        </div>
-        <div class="col-lg-6 text-right">
-          <div>&nbsp;</div>
-          <div>&nbsp;</div>
-          <button
-            nbButton
-            status="primary"
-            size="small"
-            (click)="editar()"
-          >
-          +Agregar
-          </button>
-        </div>
-      </div>
-      <div class="mt-1" *ngIf="datos">
-        <table class="table table-bordered table-condensed table-striped table-hover table-sm text-center">
-          <thead class="headTable">
-            <tr >
-              <th>Descripción</th>
-              <th>Abreviación</th>
-              <th>Tipo</th>
-              <th>Vigencia</th>
-              <th>Editar</th>
-              <th>Eliminar</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let register of datos.Datos">
-              <td class="text-left">{{register.Descripcion | uppercase}}</td>
-              <td>{{register.Abreviacion}}</td>
-              <td>{{register.Tipo}}</td>
-              <td>
-                <nb-icon icon="checkmark-circle" status="success"   *ngIf="register.Vigencia === 'S'"></nb-icon>
-                <nb-icon icon="close-circle" status="danger"   *ngIf="register.Vigencia !== 'S'"></nb-icon>
-              </td>
 
-              <td>
-                <nb-icon
-                  icon="edit"
-                  nbTooltip="Editar"
-                  (click)="editar()"
-                  status="success"
-                ></nb-icon>
-              </td>
-              <td>
-                <nb-icon
-                  icon="trash"
-                  nbTooltip="Eliminar"
-                  (click)="eliminar()"
-                  status="danger"
-                ></nb-icon>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-  
-      </div>
-    </nb-card-body>
-  </nb-card>
-  
+<div class="row">
+  <div class="col-lg-6">
+<!--           <div>
+      <nb-icon class="mr-2" icon="search"></nb-icon>
+      <label class="label" for="search">
+        <span>Búsqueda:</span>
+      </label>
+    </div>
+    <input
+      id="search"
+      nbInput
+      placeholder="Ingrese palabra clave..."
+    > -->
+  </div>
+  <div class="col-lg-6 text-right">
+    <div>&nbsp;</div>
+    <div>&nbsp;</div>
+    <button
+      nbButton
+      status="primary"
+      size="small"
+      (click)="editar()"
+    >
+    +Agregar
+    </button>
+  </div>
+</div>
+<div class="mt-1" *ngIf="datos">
+  <table class="table table-bordered table-condensed table-striped table-hover table-sm text-center">
+    <thead class="headTable">
+      <tr >
+        <th>Descripción</th>
+        <th>Abreviación</th>
+        <th>Tipo</th>
+        <th>Vigencia</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let register of datos.Datos">
+        <td class="text-center">{{register.Descripcion | uppercase}}</td>
+        <td>{{register.Abreviacion}}</td>
+        <td>{{register.Tipo}}</td>
+        <td>
+          <nb-icon icon="checkmark-circle" status="success"   *ngIf="register.Vigencia === 'S'"></nb-icon>
+          <nb-icon icon="close-circle" status="danger"   *ngIf="register.Vigencia !== 'S'"></nb-icon>
+        </td>
+
+        <td>
+          <nb-icon
+            icon="edit"
+            nbTooltip="Editar"
+            (click)="editar()"
+            status="success"
+          ></nb-icon>
+        </td>
+        <td>
+          <nb-icon
+            icon="trash"
+            nbTooltip="Eliminar"
+            (click)="eliminar()"
+            status="danger"
+          ></nb-icon>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+

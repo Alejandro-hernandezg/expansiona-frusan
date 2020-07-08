@@ -8,8 +8,8 @@ import { MaintainersService } from '../services/maintainers.service';
 })
 export class ParametersComponent implements OnInit {
 
-  unidadMedidaData : any;
-  conceptoValorData : any;
+  unidadMedidaData: any;
+  conceptoValorData: any;
 
   constructor(private http: MaintainersService) { }
 
@@ -17,7 +17,7 @@ export class ParametersComponent implements OnInit {
     this.initialize();
   }
 
-  initialize(){
+  initialize() {
     this.http.getUnidadMedida().subscribe(data => {
       if (data) {
         this.unidadMedidaData = data;
