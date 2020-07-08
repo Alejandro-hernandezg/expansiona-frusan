@@ -4,11 +4,11 @@ import { MaintainersService } from '../services/maintainers.service';
 @Component({
   selector: 'frusan-countryside',
   templateUrl: './countryside.component.html',
-  styleUrls: ['./countryside.component.scss']
+  styleUrls: ['./countryside.component.scss'],
 })
 export class CountrysideComponent implements OnInit {
 
-  tipoSueloData : any;
+  tipoSueloData: any;
 
   constructor(private http: MaintainersService) { }
 
@@ -16,7 +16,7 @@ export class CountrysideComponent implements OnInit {
     this.initialize();
   }
 
-  initialize(){
+  initialize() {
     this.http.getTipoSuelo().subscribe(data => {
       if (data) {
         this.tipoSueloData = data;
