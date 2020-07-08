@@ -81,17 +81,17 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Producto',
         icon: 'arrow-circle-right-outline',
-        link: '/pages/mantproducto',
+        /*link: '/pages/mantproducto',*/
       },
       {
         title: 'Recurso',
         icon: 'arrow-circle-right-outline',
-        link: '/pages/mantrecurso',
+        /*link: '/pages/mantrecurso',*/
       },
       {
         title: 'Sistema',
         icon: 'arrow-circle-right-outline',
-        link: '/pages/mantsistema',
+        /*link: '/pages/mantsistema',*/
       },
     ]
   },
