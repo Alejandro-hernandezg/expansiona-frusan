@@ -76,7 +76,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Campo',
         icon: 'arrow-circle-right-outline',
-        link: '/pages/maintainers/countryside',
+        link: '/pages/maintainers/field',
       },
       {
         title: 'Producto',
@@ -95,9 +95,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ]
   },
-  {
+/*   {
     title: 'Mantenedores 2',
     icon: 'arrow-circle-right-outline',
     link: '/pages/mantenedores',
-  },
+  }, */
 ];

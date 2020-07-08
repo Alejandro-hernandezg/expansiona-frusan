@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MaintainersService } from '../services/maintainers.service';
 
 @Component({
-  selector: 'frusan-countryside',
-  templateUrl: './countryside.component.html',
-  styleUrls: ['./countryside.component.scss']
+  selector: 'frusan-field',
+  templateUrl: './field.component.html',
+  styleUrls: ['./field.component.scss']
 })
-export class CountrysideComponent implements OnInit {
+export class FieldComponent implements OnInit {
 
   tipoSueloData : any;
 
