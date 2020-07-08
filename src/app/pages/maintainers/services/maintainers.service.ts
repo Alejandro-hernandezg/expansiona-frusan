@@ -13,4 +13,14 @@ export class MaintainersService {
     return this.http.get(environment.apiUrl + '/api/UnidadMedida'); // Recordar que el objeto devuelto es de tipo Observable.
 
   }
+
+  getConceptoValor( ) {
+    return this.http.get(environment.apiUrl + '/api/ConceptoValor');
+
+  }
+
+  getTipoSuelo( ) {
+    return this.http.get(environment.apiUrl + '/api/TipoSuelo');
+
+  }
 }

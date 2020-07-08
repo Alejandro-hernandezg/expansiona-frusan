@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NbDialogService } from '@nebular/theme';
+import { ModalTipoComponent } from '../modal-tipo/modal-tipo.component';
+import { ModalFormConceptoComponent } from '../modal-form-concepto/modal-form-concepto.component';
 
 @Component({
   selector: 'frusan-concepto-valor',
@@ -7,9 +10,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConceptoValorComponent implements OnInit {
 
-  constructor() { }
+  @Input() datos: any;
+
+  constructor(private dialogService: NbDialogService) {
+
+  }
 
   ngOnInit(): void {
+  }
+
+  editar() {
+
+    this.dialogService.open(ModalFormConceptoComponent, {
+      context: {
+        
+      },
+      closeOnBackdropClick: false,
+    });
+  }
+
+  eliminar() {
+    this.dialogService.open(ModalTipoComponent, {
+      context: {
+        tipoConfirmacion: true,
+        titulo: 'Confirmación',
+        mensaje: '¿Seguro que desea eliminar el registro?',
+      },
+      closeOnBackdropClick: false
+    });
+  }
+
+  valores() {
+  }
+
+  modalAgregarregistrocomponente(){
   }
 
 }

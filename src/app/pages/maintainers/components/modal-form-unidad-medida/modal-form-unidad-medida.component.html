@@ -1,0 +1,85 @@
+<div class="container" style="width: 600px;">
+    <nb-card>
+        <nb-card-header class="headTable">
+            <div>
+                <nb-icon icon="file-text-outline" class="mr-2"></nb-icon>
+                <span>
+                    Agregar
+                </span>
+            </div>
+        </nb-card-header>
+
+        <nb-card-body>
+            <div class="container">
+                <div class="form-group">
+                    <label class="label" for="txtDescripcion">
+                        <nb-icon icon="edit-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Descripción
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" id="txtDescripcion" placeholder="Ingresar descripcion">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="txtAbreviacion">
+                        <nb-icon icon="flash-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Abreviación
+                        </span>
+                    </label>
+                    <input type="text" class="form-control" id="txtAbreviacion" placeholder="Ingresar abreviacion">
+                </div>
+                <div class="form-group">
+                    <label class="label" for="ddlTipo">
+                        <nb-icon icon="checkmark-circle-2-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Tipo
+                        </span>
+                    </label>
+                    <select class="form-control" id="ddlTipo">
+                        <option>Tipo 1</option>
+                        <option>Tipo 2</option>
+                        <option>Tipo 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="ddlVigencia">
+                        <nb-icon icon="checkmark-circle-2-outline" class="mr-1"></nb-icon>
+                        <span>
+                            Vigencia
+                        </span>
+                    </label>
+                    <select class="form-control" id="ddlVigencia">
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+                </div>
+            </div>
+        </nb-card-body>
+
+        <nb-card-footer>
+            <div class="row">
+                <div class="col-6 text-center">
+                    <button
+                    nbButton
+                    status="primary"
+                    size="small"
+                    >
+                    Grabar
+                    </button>
+                </div>
+                <div class="col-6 text-center">
+                    <button
+                    nbButton
+                    status="danger"
+                    size="small"
+                    (click)="cerrar()"
+                    >
+                    Cerrar
+                    </button>
+                </div>
+            </div>
+        </nb-card-footer>
+    </nb-card>
+</div>
+

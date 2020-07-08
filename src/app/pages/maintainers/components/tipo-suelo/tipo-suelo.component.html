@@ -32,8 +32,6 @@
           <thead class="headTable">
             <tr >
               <th>Descripción</th>
-              <th>Abreviación</th>
-              <th>Tipo</th>
               <th>Vigencia</th>
               <th>Editar</th>
               <th>Eliminar</th>
@@ -42,8 +40,6 @@
           <tbody>
             <tr *ngFor="let register of datos.Datos">
               <td class="text-left">{{register.Descripcion | uppercase}}</td>
-              <td>{{register.Abreviacion}}</td>
-              <td>{{register.Tipo}}</td>
               <td>
                 <nb-icon icon="checkmark-circle" status="success"   *ngIf="register.Vigencia === 'S'"></nb-icon>
                 <nb-icon icon="close-circle" status="danger"   *ngIf="register.Vigencia !== 'S'"></nb-icon>
@@ -72,4 +68,3 @@
       </div>
     </nb-card-body>
   </nb-card>
-  

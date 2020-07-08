@@ -1,14 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NbDialogService } from '@nebular/theme';
 import { ModalTipoComponent } from '../modal-tipo/modal-tipo.component';
-import { ModalFormUnidadMedidaComponent } from '../modal-form-unidad-medida/modal-form-unidad-medida.component';
+import { ModalFormTipoSueloComponent } from '../modal-form-tipo-suelo/modal-form-tipo-suelo.component';
 
 @Component({
-  selector: 'frusan-unidad-medida',
-  templateUrl: './unidad-medida.component.html',
-  styleUrls: ['./unidad-medida.component.scss']
+  selector: 'frusan-tipo-suelo',
+  templateUrl: './tipo-suelo.component.html',
+  styleUrls: ['./tipo-suelo.component.scss']
 })
-export class UnidadMedidaComponent implements OnInit {
+export class TipoSueloComponent implements OnInit {
 
   @Input() datos: any;
 
@@ -21,7 +21,7 @@ export class UnidadMedidaComponent implements OnInit {
 
   editar() {
 
-    this.dialogService.open(ModalFormUnidadMedidaComponent, {
+    this.dialogService.open(ModalFormTipoSueloComponent, {
       context: {
         
       },

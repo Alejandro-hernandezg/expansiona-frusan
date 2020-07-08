@@ -76,7 +76,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       {
         title: 'Campo',
         icon: 'arrow-circle-right-outline',
-        link: '/pages/mantcampo',
+        link: '/pages/maintainers/countryside',
       },
       {
         title: 'Producto',

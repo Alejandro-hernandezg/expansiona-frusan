@@ -9,6 +9,7 @@ import { MaintainersService } from '../services/maintainers.service';
 export class ParametersComponent implements OnInit {
 
   unidadMedidaData : any;
+  conceptoValorData : any;
 
   constructor(private http: MaintainersService) { }
 
@@ -20,6 +21,13 @@ export class ParametersComponent implements OnInit {
     this.http.getUnidadMedida().subscribe(data => {
       if (data) {
         this.unidadMedidaData = data;
+      }
+
+    });
+
+    this.http.getConceptoValor().subscribe(data => {
+      if (data) {
+        this.conceptoValorData = data;
       }
 
     });
