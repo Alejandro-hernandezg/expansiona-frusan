@@ -1,8 +1,7 @@
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ParametersComponent } from './parameters/parameters.component';
-import { FieldComponent } from './Field/Field.component';
-
+import { FieldComponent } from './field/field.component';
 
 const routes: Routes = [
   {
