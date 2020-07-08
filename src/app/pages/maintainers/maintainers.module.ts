@@ -7,13 +7,25 @@ import { UnidadMedidaComponent } from './components/unidad-medida/unidad-medida.
 import { TipoLaborComponent } from './components/tipo-labor/tipo-labor.component';
 import { ConceptoValorComponent } from './components/concepto-valor/concepto-valor.component';
 import { ParametersComponent } from './parameters/parameters.component';
-import { NbCardModule, NbSelectModule, NbInputModule, NbAlertModule, NbButtonModule, NbTooltipModule, NbTabsetModule, NbIconModule, NbDialogModule, NbDatepickerModule, NbThemeModule } from '@nebular/theme';
+import { FieldComponent } from './field/field.component';
+import {
+  NbCardModule,
+  NbSelectModule,
+  NbInputModule,
+  NbAlertModule,
+  NbButtonModule,
+  NbTooltipModule,
+  NbTabsetModule,
+  NbIconModule,
+  NbDialogModule,
+  NbDatepickerModule,
+  NbThemeModule } from '@nebular/theme';
 import { TipoSueloComponent } from './components/tipo-suelo/tipo-suelo.component';
 import { ModalTipoComponent } from './components/modal-tipo/modal-tipo.component';
 import { ModalFormUnidadMedidaComponent } from './components/modal-form-unidad-medida/modal-form-unidad-medida.component';
 import { ModalFormConceptoComponent } from './components/modal-form-concepto/modal-form-concepto.component';
 import { ModalFormTipoSueloComponent } from './components/modal-form-tipo-suelo/modal-form-tipo-suelo.component';
-import { FieldComponent } from './field/field.component';
+
 
 const NB_MODULES = [
   NbCardModule,
@@ -26,21 +38,23 @@ const NB_MODULES = [
   NbIconModule,
   NbDialogModule.forChild(),
   NbDatepickerModule.forRoot(),
-  NbThemeModule
+  NbThemeModule,
 ];
 
 @NgModule({
-  declarations: [MaintainersComponent,
-                 UnidadMedidaComponent,
-                 TipoLaborComponent,
-                 ConceptoValorComponent,
-                 ParametersComponent,
-                 TipoSueloComponent,
-                 ModalTipoComponent,
-                 ModalFormUnidadMedidaComponent,
-                 ModalFormConceptoComponent, 
-                 ModalFormTipoSueloComponent, 
-                 FieldComponent],
+  declarations: [
+    MaintainersComponent,
+    UnidadMedidaComponent,
+    TipoLaborComponent,
+    ConceptoValorComponent,
+    ParametersComponent,
+    TipoSueloComponent,
+    ModalTipoComponent,
+    ModalFormUnidadMedidaComponent,
+    ModalFormConceptoComponent,
+    ModalFormTipoSueloComponent,
+    FieldComponent,
+  ],
   imports: [
     CommonModule,
     MaintainersRoutingModule,
